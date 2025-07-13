@@ -1,0 +1,19 @@
+<h1>Hello World!</h1>
+
+<p>This is my website.</p>
+
+<p>My name is {{first_name}}</p>
+
+<h3>Favorites:</h3>
+{% for topping in fp %}
+
+	{% if topping == 41 %}
+		{{topping + 100}}<br/>
+	{% else %}
+		{{topping}}<br/>
+	{% endif %}
+	
+{% endfor %}
+
+<br/><br/>
+{{fp.3 + 10}}
